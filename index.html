@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Sabor Express - Lanches rápidos, saborosos e feitos com carinho!</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="Logo Sabor Express"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Sabor Express
+            </h1>
+
+            <span class="text-white font-medium">Rua das Palmeiras, 123 - Bairro Tambaú, João Pessoa - PB, CEP
+                58039-001</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 ás 22:00 </span>
+            </div>
+
+        </div>
+    </header>
+    <!-- Fim do Header -->
+
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <!-- Inicio Menu -->
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburguer Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Carne de 120g, prensada na chapa, com cebola grelhada, queijo derretido, picles e
+                        molho especial, servido no pão tostado.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 18.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                            data-price="18.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="Cheddar Burguer"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Cheddar Burguer</p>
+                    <p class="text-sm">Carne 150g, cheddar derretido, bacon crocante, cebola caramelizada e molho
+                        barbecue.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 16.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cheddar Burguer"
+                            data-price="16.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="Duplo Bacon"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Duplo Bacon</p>
+                    <p class="text-sm">Dois hambúrgueres suculentos de 120g, queijo derretido, bacon extra crocante,
+                        alface fresca e o irresistível molho especial da casa.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 25.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Duplo Bacon"
+                            data-price="25.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-veg.png" alt="Veggie Burger"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Veggie Burgerr</p>
+                    <p class="text-sm">Hambúrguer de grão-de-bico ou lentilha, alface, tomate, cebola roxa e molho de
+                        ervas.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 26.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Veggie Burger"
+                            data-price="26.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/sand-frango.png" alt="Sanduíche de Frango Desfiado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Sanduíche de Frango Desfiado</p>
+                    <p class="text-sm">
+                        Frango desfiado misturado com maionese temperada, alface fresca e cenoura raladinha, servido no
+                        pão francês crocante.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 17.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Sanduíche de Frango Desfiado" data-price="17.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/wrap-frango.webp" alt="Wrap de Frango Grelhado"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Wrap de Frango Grelhado</p>
+                    <p class="text-sm">Wrap de frango grelhado, alface crocante, tomate fresco e molho cremoso de
+                        iogurte, servido em um pão leve e macio.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 23.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Wrap de Frango Grelhado"
+                            data-price="23.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/misto-quente.png" alt="Misto Quente Especial"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Misto Quente Especial</p>
+                    <p class="text-sm">Presunto fatiado, queijo derretido, rodelas de tomate fresco e um toque de
+                        orégano, tudo no pão tostado e dourado.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 14.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Misto Quente Especial"
+                            data-price="14.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/cachorro-quente.png" alt="Cachorro-Quente Artesanal"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Cachorro-Quente Artesanal</p>
+                    <p class="text-sm">Salsicha de qualidade, milho, batata palha e molho especial no pão de hot dog
+                        artesanal.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 18.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cachorro-Quente Artesanal"
+                            data-price="18.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+        </main>
+
+        <!-- PRATOS RAPIDOS -->
+        <div class="max-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Pratos Rápidos</h2>
+        </div>
+
+        <!-- Grid Pratos Rapidos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-5 w-full">
+                <img src="./assets/coxinha.jpg" alt="Coxinha de Frango com Catupiry"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Coxinha de Frango com Catupiry</p>
+                    <p class="text-sm">Coxinha crocante com recheio de frango e catupiry.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 3.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Coxinha de Frango com Catupiry" data-price="3.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-5 w-full">
+                <img src="./assets/empadinha.jpg" alt="Empada de Frango"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Empada de Frango</p>
+                    <p class="text-sm">Empada recheada com frango desfiado e azeitonas, envolta em massa crocante.</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 4.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Empada de Frango"
+                            data-price="4.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+        </div>
+        <!-- Fim Grid Pratos Rapidos -->
+        <!-- Fim Pratos Rapidos -->
+
+        <!-- BEBIDAS -->
+        <div class="max-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+
+        <!-- Grid Bebidas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri-1.png" alt="Coca-Cola"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 3.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola"
+                            data-price="3.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+
+            <!-- Produtos/itens -->
+            <div class="flex gap-2">
+                <img src="./assets/refri-2.png" alt="Guarana Antartica"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div class="w-full">
+                    <p class="font-bold text-lg">Guarana Antartica</p>
+                    <div class="flex itens-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 4.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Antartica"
+                            data-price="4.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Produtos/itens -->
+        </div>
+        <!-- Fim Grid Bebidas -->
+        <!-- FIM BEBIDAS -->
+
+    </div>
+    <!-- Fim Menu -->
+
+    <!-- Modal cart -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"> <!-- troca o hidden pra flex q aparece o cart -->
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button> <!-- nao ta aparecendo o botao-->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Fim Modal cart -->
+
+
+    <!-- button cart footer -->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold " id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Fim button cart footer -->
+
+    <!-- Chatbot Dialogflow -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        chat-title="Chatbot_Sabor_Express"
+        agent-id="28f142de-2ab5-44e1-ba20-39408597a9dd"
+        language-code="pt-br">
+    </df-messenger>
+</body>
+
+</html>
